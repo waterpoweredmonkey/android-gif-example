@@ -170,6 +170,7 @@ configurations.all {
 }
 
 dependencies {
+  compile(extra["multidex"])
   compile(extra["design"])
   compile(extra["cardviewv7"])
   compile(extra["kotlinStdlib"])
