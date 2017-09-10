@@ -1,5 +1,5 @@
 // Common versions
-val androidGradleVersion            = "2.3.3"
+val androidGradleVersion            = "3.0.0-beta4"
 val kotlinVersion                   = "1.1.4-3"
 val supportLibraryVersion           = "26.0.2"
 val daggerVersion                   = "2.11"
@@ -10,13 +10,14 @@ val leakCanaryVersion               = "1.5"
 val multidexVersion                 = "1.0.2"
 val glideVersion                    = "4.1.1"
 val mockitoVersion                  = "2.9.0"
+val jacocoVersion                   = "0.7.4.201502262128"
 
 // Android plugin
 extra["minSdkVersion"]              = 19
 extra["targetSdkVersion"]           = 26
 extra["compileSdkVersion"]          = 26
 extra["buildToolsVersion"]          = "26.0.1"
-extra["javaVersion"]                = "1.7"
+extra["javaVersion"]                = "1.8"
 extra["debugKeystoreUser"]          = "androiddebugkey"
 extra["debugKeystorePass"]          = "android"
 
@@ -83,3 +84,9 @@ extra["truth"]                      = "com.google.truth:truth:0.35"
 extra["equalsverifier"]             = "nl.jqno.equalsverifier:equalsverifier:2.3.3"
 extra["mockwebserver"]              = "com.squareup.okhttp3:mockwebserver:$okHttpVersion"
 extra["reflections"]                = "org.reflections:reflections:0.9.11"
+
+// jacocoAgent / androidJacocoAgent
+extra["orgJacocoAgent"]             = "org.jacoco:org.jacoco.agent:$jacocoVersion"
+
+// jacocoAnt / androidJacocoAnt
+extra["orgJacocoAnt"]               = "org.jacoco:org.jacoco.ant:$jacocoVersion"
