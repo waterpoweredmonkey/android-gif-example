@@ -209,7 +209,6 @@ kapt {
 
 tasks.withType<KotlinCompile> {
   kotlinOptions {
-    // TODO Instrumentation run failed due to 'java.lang.IllegalAccessError'
-//    jvmTarget = extra["javaVersion"] as String
+    jvmTarget = rootProject.extra["javaVersion"] as String
   }
 }
